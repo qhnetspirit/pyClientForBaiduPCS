@@ -1,0 +1,120 @@
+Tue Jun 09 01:11:54 2015    bypy_profile.txt
+
+         1732 function calls in 2.751 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    2.751    2.751 <string>:1(<module>)
+        1    0.001    0.001    2.751    2.751 bypy.py:3170(main)
+        1    0.000    0.000    2.745    2.745 bypy.py:3418(Profile)
+        1    0.000    0.000    2.745    2.745 cProfile.py:14(run)
+        1    0.000    0.000    2.745    2.745 cProfile.py:132(run)
+        1    0.000    0.000    2.745    2.745 cProfile.py:137(runctx)
+        1    2.745    2.745    2.745    2.745 {method 'enable' of '_lsprof.Profiler' objects}
+       23    0.001    0.000    0.004    0.000 argparse.py:1250(add_argument)
+        1    0.000    0.000    0.001    0.001 argparse.py:1543(__init__)
+       23    0.000    0.000    0.001    0.000 argparse.py:2313(_get_formatter)
+       23    0.000    0.000    0.001    0.000 argparse.py:154(__init__)
+       23    0.000    0.000    0.001    0.000 argparse.py:1667(_add_action)
+        1    0.000    0.000    0.001    0.001 argparse.py:1687(parse_args)
+        1    0.000    0.000    0.001    0.001 argparse.py:1694(parse_known_args)
+       23    0.000    0.000    0.001    0.000 argparse.py:1495(_add_action)
+       22    0.000    0.000    0.000    0.000 argparse.py:1387(_get_optional_kwargs)
+       23    0.000    0.000    0.000    0.000 argparse.py:571(_format_args)
+       49    0.000    0.000    0.000    0.000 re.py:188(compile)
+        3    0.000    0.000    0.000    0.000 gettext.py:565(gettext)
+        1    0.000    0.000    0.000    0.000 argparse.py:1729(_parse_known_args)
+        3    0.000    0.000    0.000    0.000 gettext.py:527(dgettext)
+       23    0.000    0.000    0.000    0.000 argparse.py:1307(_add_action)
+        3    0.000    0.000    0.000    0.000 gettext.py:461(translation)
+        3    0.000    0.000    0.000    0.000 gettext.py:421(find)
+        3    0.000    0.000    0.000    0.000 argparse.py:1169(__init__)
+       53    0.000    0.000    0.000    0.000 re.py:226(_compile)
+       23    0.000    0.000    0.000    0.000 argparse.py:1422(_pop_action_class)
+        2    0.000    0.000    0.000    0.000 argparse.py:1297(add_argument_group)
+       48    0.000    0.000    0.000    0.000 argparse.py:1225(_registry_get)
+       48    0.000    0.000    0.000    0.000 argparse.py:95(_callable)
+        2    0.000    0.000    0.000    0.000 argparse.py:1473(__init__)
+      129    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+      141    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+       99    0.000    0.000    0.000    0.000 {hasattr}
+        3    0.000    0.000    0.000    0.000 gettext.py:130(_expand_lang)
+      124    0.000    0.000    0.000    0.000 {callable}
+       34    0.000    0.000    0.000    0.000 argparse.py:1221(register)
+       23    0.000    0.000    0.000    0.000 argparse.py:564(format)
+       90    0.000    0.000    0.000    0.000 {len}
+       23    0.000    0.000    0.000    0.000 os.py:422(__getitem__)
+        1    0.000    0.000    0.000    0.000 argparse.py:1797(consume_optional)
+       12    0.000    0.000    0.000    0.000 argparse.py:805(__init__)
+       38    0.000    0.000    0.000    0.000 {method 'match' of '_sre.SRE_Pattern' objects}
+        1    0.000    0.000    0.000    0.000 argparse.py:1874(consume_positionals)
+       12    0.000    0.000    0.000    0.000 os.py:444(get)
+       54    0.000    0.000    0.000    0.000 {method 'strip' of 'unicode' objects}
+       44    0.000    0.000    0.000    0.000 {isinstance}
+       54    0.000    0.000    0.000    0.000 {method 'find' of 'unicode' objects}
+       23    0.000    0.000    0.000    0.000 argparse.py:763(__init__)
+        2    0.000    0.000    0.000    0.000 argparse.py:1776(take_action)
+       29    0.000    0.000    0.000    0.000 {method 'split' of 'unicode' objects}
+        3    0.000    0.000    0.000    0.000 locale.py:347(normalize)
+        2    0.000    0.000    0.000    0.000 bypy.py:440(interpret_size)
+       45    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 re.py:134(match)
+       35    0.000    0.000    0.000    0.000 {method 'upper' of 'str' objects}
+       23    0.000    0.000    0.000    0.000 argparse.py:1435(_check_conflict)
+        1    0.000    0.000    0.000    0.000 argparse.py:2007(_match_argument)
+       40    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+        4    0.000    0.000    0.000    0.000 argparse.py:863(__init__)
+       25    0.000    0.000    0.000    0.000 {setattr}
+       23    0.000    0.000    0.000    0.000 argparse.py:197(__init__)
+        6    0.000    0.000    0.000    0.000 argparse.py:840(__init__)
+       23    0.000    0.000    0.000    0.000 argparse.py:555(_metavar_formatter)
+        1    0.000    0.000    0.000    0.000 argparse.py:2026(_match_arguments_partial)
+        2    0.000    0.000    0.000    0.000 argparse.py:2239(_get_value)
+        2    0.000    0.000    0.000    0.000 argparse.py:2187(_get_values)
+       15    0.000    0.000    0.000    0.000 {range}
+        2    0.000    0.000    0.000    0.000 argparse.py:2143(_get_nargs_pattern)
+       14    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 argparse.py:880(__init__)
+        3    0.000    0.000    0.000    0.000 argparse.py:960(__init__)
+        1    0.000    0.000    0.000    0.000 {method 'items' of 'dictproxy' objects}
+        1    0.000    0.000    0.000    0.000 ntpath.py:196(basename)
+        3    0.000    0.000    0.000    0.000 argparse.py:1426(_get_handler)
+        9    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 argparse.py:981(__init__)
+        9    0.000    0.000    0.000    0.000 {method 'find' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 ntpath.py:164(split)
+        6    0.000    0.000    0.000    0.000 {signal.signal}
+        2    0.000    0.000    0.000    0.000 {method 'format' of 'unicode' objects}
+        9    0.000    0.000    0.000    0.000 {method 'group' of '_sre.SRE_Match' objects}
+        1    0.000    0.000    0.000    0.000 {method 'join' of 'unicode' objects}
+        1    0.000    0.000    0.000    0.000 argparse.py:1371(_get_positional_kwargs)
+        1    0.000    0.000    0.000    0.000 argparse.py:1000(__init__)
+        5    0.000    0.000    0.000    0.000 {getattr}
+        1    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 {__import__}
+        1    0.000    0.000    0.000    0.000 argparse.py:834(__call__)
+        4    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+        2    0.000    0.000    0.000    0.000 {nt.stat_float_times}
+        1    0.000    0.000    0.000    0.000 argparse.py:857(__call__)
+        3    0.000    0.000    0.000    0.000 {method 'reverse' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 argparse.py:1679(_get_positional_actions)
+        3    0.000    0.000    0.000    0.000 {method 'translate' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 argparse.py:2042(_parse_optional)
+        2    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 ntpath.py:122(splitdrive)
+        2    0.000    0.000    0.000    0.000 argparse.py:1589(identity)
+        1    0.000    0.000    0.000    0.000 {method 'lstrip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 argparse.py:1151(__init__)
+        1    0.000    0.000    0.000    0.000 {zip}
+        1    0.000    0.000    0.000    0.000 {method 'replace' of 'unicode' objects}
+        1    0.000    0.000    0.000    0.000 {max}
+        1    0.000    0.000    0.000    0.000 {method 'insert' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 argparse.py:2264(_check_value)
+        1    0.000    0.000    0.000    0.000 {iter}
+        1    0.000    0.000    0.000    0.000 {method 'lstrip' of 'unicode' objects}
+        1    0.000    0.000    0.000    0.000 {method 'groups' of '_sre.SRE_Match' objects}
+        1    0.000    0.000    0.000    0.000 {min}
+
+

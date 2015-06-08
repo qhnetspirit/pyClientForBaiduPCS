@@ -3285,7 +3285,7 @@ right after the '# PCS configuration constants' comment.
 		parser.add_argument("--mirror", dest="mirror", default=None, help="Specify the PCS mirror (e.g. bj.baidupcs.com. Open 'https://pcs.baidu.com/rest/2.0/pcs/manage?method=listhost' to get the list) to use.")
 
 		# action
-		parser.add_argument("-c", "--clean", dest="clean", action="count", default=0, help="1: clean settings (remove the token file) \n2: clean settings and hash cache [default: %(default)s]")
+		parser.add_argument("-c", "--clean", dest="clean", action="count", default=0, help="1: clean settings (remove the token file) 2: clean settings and hash cache [default: %(default)s]")
 
 		# the MAIN parameter - what command to perform
 		parser.add_argument("command", nargs='*', help = "operations (quota / list)")
@@ -3318,13 +3318,12 @@ right after the '# PCS configuration constants' comment.
 		if args.PROFILE:
 			return Profile()
 
-                if args.verbose > 0:
-	        	pr("Token file: '{}'".format(TokenFilePath))
-		        pr("Hash Cache file: '{}'".format(HashCachePath))
-		        pr("App root path at Baidu Yun '{}'".format(AppPcsPath))
-		        pr("sys.stdin.encoding = {}".format(sys.stdin.encoding))
-		        pr("sys.stdout.encoding = {}".format(sys.stdout.encoding))
-		        pr("sys.stderr.encoding = {}".format(sys.stderr.encoding))
+		pr("Token file: '{}'".format(TokenFilePath))
+		pr("Hash Cache file: '{}'".format(HashCachePath))
+		pr("App root path at Baidu Yun '{}'".format(AppPcsPath))
+		pr("sys.stdin.encoding = {}".format(sys.stdin.encoding))
+		pr("sys.stdout.encoding = {}".format(sys.stdout.encoding))
+		pr("sys.stderr.encoding = {}".format(sys.stderr.encoding))
 
 		if args.verbose > 0:
 			pr("Verbose level = {}".format(args.verbose))

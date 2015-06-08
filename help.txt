@@ -6,6 +6,17 @@ sys.stdout.encoding = None
 sys.stderr.encoding = cp936
 ----
 
+
+Please visit:
+https://openapi.baidu.com/oauth/2.0/authorize?scope=basic+netdisk&redirect_uri=oob&response_type=code&client_id=q8WE4EpCsau1oS0MplgMKNBn
+
+https://openapi.baidu.com/oauth/2.0/authorize?scope=basic+netdisk&redirect_uri=oob&response_type=code&client_id=xKCtRHlzGdbGhTk62cIc4Bjy  //tsinghuamobile
+
+And authorize this app
+Paste the Authorization Code here within 10 minutes.
+
+
+
 usage: bypy.py [-h] [--TESTRUN] [--PROFILE] [-V] [-d] [-v] [-r RETRY]
                [-q QUIT] [-t TIMEOUT] [-s SLICE] [--chunk CHUNK] [-e] [-f]
                [-l LISTFILE] [--resume-download RESUMEDL]
@@ -99,25 +110,3 @@ syncdown [remotedir] [localdir] [deletelocal] - sync down from the remote direco
 syncup [localdir] [remotedir] [deleteremote] - sync up from the local direcotry to the remote directory
 unzip <remotepath> [<subpath> [<start> [<limit>]]]
 upload [localpath] [remotepath] [ondup] [rapiduploadonly] - upload a file or directory (recursively)
-Token file: 'C:\Users\007\.bypy\bypy.json'
-Hash Cache file: 'C:\Users\007\.bypy\bypy.pickle'
-App root path at Baidu Yun '/apps/bypy'
-sys.stdin.encoding = cp936
-sys.stdout.encoding = None
-sys.stderr.encoding = cp936
-----
-
-<E> [23:48:14] Error while loading baidu pcs token:
-<E> [23:48:14] Traceback (most recent call last):
-  File "bypy.py", line 1473, in __load_local_json
-    with open(TokenFilePath, 'rb') as infile:
-IOError: [Errno 2] No such file or directory: u'C:\\Users\\007\\.bypy\\bypy.json'
-
-Please visit:
-https://openapi.baidu.com/oauth/2.0/authorize?scope=basic+netdisk&redirect_uri=oob&response_type=code&client_id=q8WE4EpCsau1oS0MplgMKNBn
-And authorize this app
-Paste the Authorization Code here within 10 minutes.
-Press [Enter] when you are done
-Signal 2 received, Abort
-Stack:
-
