@@ -1,0 +1,123 @@
+Token file: 'C:\Users\007\.bypy\bypy.json'
+Hash Cache file: 'C:\Users\007\.bypy\bypy.pickle'
+App root path at Baidu Yun '/apps/bypy'
+sys.stdin.encoding = cp936
+sys.stdout.encoding = None
+sys.stderr.encoding = cp936
+----
+
+usage: bypy.py [-h] [--TESTRUN] [--PROFILE] [-V] [-d] [-v] [-r RETRY]
+               [-q QUIT] [-t TIMEOUT] [-s SLICE] [--chunk CHUNK] [-e] [-f]
+               [-l LISTFILE] [--resume-download RESUMEDL]
+               [--include-regex INCREGEX] [--on-dup ONDUP] [--no-symlink]
+               [--disable-ssl-check] [--cacerts CACERTS] [--mirror MIRROR]
+               [-c]
+               [command [command ...]]
+
+bypy -- Python client for Baidu Yun
+
+https://github.com/houtianze/bypy
+
+positional arguments:
+  command               operations (quota / list)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --TESTRUN             Perform python doctest
+  --PROFILE             Profile the code
+  -V, --version         show program's version number and exit
+  -d, --debug           enable debugging & logging [default: 0]
+  -v, --verbose         set verbosity level [default: 0]
+  -r RETRY, --retry RETRY
+                        number of retry attempts on network error [default: 5
+                        times]
+  -q QUIT, --quit-when-fail QUIT
+                        quit when maximum number of retry failed [default:
+                        False]
+  -t TIMEOUT, --timeout TIMEOUT
+                        network timeout in seconds [default: 60]
+  -s SLICE, --slice SLICE
+                        size of file upload slice (can use '1024', '2k',
+                        '3MB', etc) [default: 20 MB]
+  --chunk CHUNK         size of file download chunk (can use '1024', '2k',
+                        '3MB', etc) [default: 20 MB]
+  -e, --verify          Verify upload / download [default : False]
+  -f, --force-hash      force file MD5 / CRC32 calculation instead of using
+                        cached value
+  -l LISTFILE, --list-file LISTFILE
+                        input list file (used by some of the commands only
+                        [default: None]
+  --resume-download RESUMEDL
+                        resume instead of restarting when downloading if local
+                        file already exists [default: True]
+  --include-regex INCREGEX
+                        regular expression of files to include. if not
+                        specified (default), everything is included. for
+                        download, the regex applies to the remote files; for
+                        upload, the regex applies to the local files. to
+                        exclude files, think about your regex, some tips here:
+                        https://stackoverflow.com/questions/406230/regular-
+                        expression-to-match-string-not-containing-a-word
+                        [default: ]
+  --on-dup ONDUP        what to do when the same file / folder exists in the
+                        destination: 'overwrite', 'skip', 'prompt' [default:
+                        overwrite]
+  --no-symlink          DON'T follow symbol links when uploading / syncing up
+  --disable-ssl-check   DON'T verify host SSL cerificate
+  --cacerts CACERTS     Specify the path for CA Bundle [default: None]
+  --mirror MIRROR       Specify the PCS mirror (e.g. bj.baidupcs.com. Open 'ht
+                        tps://pcs.baidu.com/rest/2.0/pcs/manage?method=listhos
+                        t' to get the list) to use.
+  -c, --clean           1: clean settings (remove the token file) 2: clean
+                        settings and hash cache [default: 0]
+
+Commands:
+help command - provide some information for the command
+cleancache - remove invalid entries from hash cache file
+combine <remotefile> [md5s] [localfile] - try to create a file at PCS by combining slices, having MD5s specified
+compare [remotedir] [localdir] - compare the remote direcotry with the local directory
+copy/cp <from> <to> - copy a file / dir remotely at Baidu Yun
+delete/remove/rm <remotepath> - delete a file / dir remotely at Baidu Yun
+downdir <remotedir> [localdir] - download a remote directory (recursively)
+downfile <remotefile> [localpath] - download a remote file.
+dumpcache - display file hash cache
+extract <remotepath> <subpath> [<saveaspath>]
+history <remotepath>
+list/ls [remotepath] [format] [sort] [order] - list the 'remotepath' directory at Baidu PCS
+listrecycle [start] [limit] - list the recycle contents
+meta <remotepath> [format] - get information of the given path (dir / file) at Baidu Yun.
+mkdir <remotedir> - create a directory at Baidu Yun
+move/mv/rename/ren <from> <to> - move a file / dir remotely at Baidu Yun
+quota/info - displays the quota information
+refreshtoken - refresh the access token
+restore <remotepath> - restore a file from the recycle bin
+revert <remotepath> revisionid [dir]
+revision <remotepath>
+search <keyword> [remotepath] [recursive] - search for a file using keyword at Baidu Yun
+stream <remotefile> <localpipe> [format] [chunk] - stream a video / audio file converted to M3U format at cloud side, to a pipe.
+syncdown [remotedir] [localdir] [deletelocal] - sync down from the remote direcotry to the local directory
+syncup [localdir] [remotedir] [deleteremote] - sync up from the local direcotry to the remote directory
+unzip <remotepath> [<subpath> [<start> [<limit>]]]
+upload [localpath] [remotepath] [ondup] [rapiduploadonly] - upload a file or directory (recursively)
+Token file: 'C:\Users\007\.bypy\bypy.json'
+Hash Cache file: 'C:\Users\007\.bypy\bypy.pickle'
+App root path at Baidu Yun '/apps/bypy'
+sys.stdin.encoding = cp936
+sys.stdout.encoding = None
+sys.stderr.encoding = cp936
+----
+
+<E> [23:48:14] Error while loading baidu pcs token:
+<E> [23:48:14] Traceback (most recent call last):
+  File "bypy.py", line 1473, in __load_local_json
+    with open(TokenFilePath, 'rb') as infile:
+IOError: [Errno 2] No such file or directory: u'C:\\Users\\007\\.bypy\\bypy.json'
+
+Please visit:
+https://openapi.baidu.com/oauth/2.0/authorize?scope=basic+netdisk&redirect_uri=oob&response_type=code&client_id=q8WE4EpCsau1oS0MplgMKNBn
+And authorize this app
+Paste the Authorization Code here within 10 minutes.
+Press [Enter] when you are done
+Signal 2 received, Abort
+Stack:
+
